@@ -1,0 +1,5 @@
+function dividendCalendar(config={}){
+ const recordDate=config.recordDate||16,purchases=config.purchases||{};
+ const days=Array.from({length:14},(_,i)=>i+8);
+ return `<figure class="dividend-calendar" aria-label="2026년 11월 8일부터 21일까지의 배당 달력"><div class="calendar-heading"><strong>2026년 11월</strong><span>배당기준일 <b>${recordDate}일</b></span></div><table><caption class="calendar-caption">14·15일은 쉬는 날이에요.</caption><thead><tr>${['일','월','화','수','목','금','토'].map((d,i)=>`<th scope="col" class="${i===0?'sunday':i===6?'saturday':''}">${d}</th>`).join('')}</tr></thead><tbody>${[0,7].map(start=>`<tr>${days.slice(start,start+7).map((d,i)=>`<td class="${i===0?'sunday':i===6?'saturday':''} ${[14,15].includes(d)?'closed':''} ${purchases[d]?'purchase-date':''} ${d===recordDate?'record-date':''}"><span class="calendar-date">${d}</span>${d===recordDate?'<span class="calendar-label">배당기준일</span>':[14,15].includes(d)?'<span class="calendar-label">휴장</span>':''}${purchases[d]?`<span class="calendar-label">${purchases[d]}</span>`:''}</td>`).join('')}</tr>`).join('')}</tbody></table></figure>`;
+}

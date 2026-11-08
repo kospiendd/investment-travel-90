@@ -1,0 +1,54 @@
+/* Jua for short display headings; Pretendard for reading and controls. */
+:root{--font-body:'Pretendard',-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',sans-serif;--font-display:'Jua',var(--font-body)}
+body{font-family:var(--font-body)}
+button,input,select,textarea{font-family:inherit}
+h1,h2,.brand,.map-view .brand,.path-toolbar h1,.chapter-banner h2,.outline-chapter h2{font-family:var(--font-display);font-weight:400;letter-spacing:-.3px}
+.map-view .brand span{font-family:var(--font-body);letter-spacing:0}
+.path-group>h3,.outline-group>h3{font-family:var(--font-display);font-weight:400}
+.path-group>h3 small,.outline-group>h3 small{font-family:var(--font-body)}
+.minimal-home h1{letter-spacing:-1px}
+.term-badge{display:inline-block;padding:3px 10px;background:#eef6e9;color:#356a43;border-radius:6px;font:600 14px/1.6 var(--font-body);white-space:nowrap}
+.group-term{margin:10px 14px;font-size:14px;color:#687661;line-height:1.8}
+.group-term strong{display:inline-block;margin-left:8px;padding:2px 10px;background:#eef6e9;color:#356a43;border-radius:6px;font-size:15px}
+dialog .group-term{margin-left:0}
+.group-intro{margin:8px 14px;font-size:17px;line-height:1.7;color:#364d30;font-weight:600}
+.path-group-intro{text-align:center;font-size:14px;line-height:1.8;color:#718267;margin:-14px 12px 32px}
+.group-description,.group-promise{margin:8px 14px;font-size:14px;line-height:1.8;color:#65735d}
+.group-promise{margin-bottom:20px;color:#3d704c}
+.unit-description{padding:0 14px 20px 54px;font-size:15px;line-height:1.9;color:#616b5c}
+.unit-description p{margin:0 0 10px}
+.unit-description .unit-outcome{color:#43734d;margin-bottom:0}
+.unit-outcome strong{display:block;font-size:12px;font-weight:650;margin-bottom:2px}
+.path-group>h3>span{min-width:0;text-align:center}
+.outline-group h3{flex-wrap:wrap}
+@media(max-width:600px){.unit-description{padding-left:36px;padding-right:3px;font-size:15px}.path-group>h3:before,.path-group>h3:after{min-width:8px}.path-node-row{min-height:235px!important}}
+
+/* Comfortable reading sizes for the learning path and lesson content. */
+.node-caption{max-width:190px}
+.node-caption b{font-size:15px;line-height:1.65}
+.node-caption>span{font-size:13px}
+.node-caption small{font-size:11px}
+.path-node-row{min-height:210px}
+.path-group>h3{font-size:17px}
+.path-group>h3 small{font-size:12px}
+.outline-group li button{font-size:16px;line-height:1.75}
+.outline-group h3{font-size:17px}
+.study{font-size:17px}
+.study p,.story-body{font-size:17px;line-height:1.9}
+.study h1{font-size:32px;line-height:1.5}
+.study h2{font-size:27px;line-height:1.55}
+.study h3{font-size:21px;line-height:1.65}
+.choice{font-size:16px;line-height:1.8}
+.choice .letter{font-size:13px}
+.study p.small{font-size:14px}
+@media(max-width:600px){
+ .node-caption b{font-size:15px}
+ .path-node-row{min-height:210px}
+ .path-group>h3{font-size:15px}
+ .path-group>h3 small{font-size:11px}
+ .study h1{font-size:29px}
+ .study h2{font-size:25px}
+ .study p,.story-body{font-size:17px;line-height:1.9}
+ .outline-group li button{font-size:15px}
+ .outline-group h3{font-size:16px}
+}

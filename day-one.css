@@ -1,0 +1,20 @@
+.day-one .ox-question { font-size:clamp(25px, 5vw, 36px); line-height:1.45; margin:24px 0 32px; word-break:keep-all; }
+.day-one .ox-choices { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.day-one .ox-choices .choice { margin:0; min-height:90px; justify-content:center; gap:12px; }
+.day-one .study-footer { gap:16px; }
+.day-one .quiz-news { background:#f5f7f3; border-left:3px solid #406854; padding:18px 20px; margin-top:20px; border-radius:6px; }
+.day-one .quiz-news p { margin:0 0 8px; line-height:1.65; word-break:keep-all; }
+.day-one .quiz-news a { color:#406854; text-underline-offset:3px; }
+.day-one .news-choices .choice { display:flex; align-items:center; gap:12px; line-height:1.6; text-align:left; word-break:keep-all; }
+.day-one .news-choices .letter { flex-shrink:0; }
+@media(max-width:420px) { .day-one .ox-choices { gap:8px; } .day-one .ox-choices .choice { padding:16px 10px; gap:8px; } }
+
+.ownership-figure{margin:20px auto;text-align:center}.ownership-grid{display:grid;grid-template-columns:repeat(10,1fr);gap:4px;max-width:300px;margin:0 auto 12px}.ownership-grid span{aspect-ratio:1;background:#e7ece9;border-radius:3px}.ownership-grid .owned{background:#258251;color:#fff;font-size:12px;display:grid;place-items:center;font-weight:700}.ownership-figure figcaption{font-size:14px;color:#53625a}
+
+.vote-comparison{margin:20px 0;padding:16px;border:1px solid #e1e8e3;border-radius:12px}.vote-row{display:grid;grid-template-columns:75px 1fr;align-items:center;gap:12px;margin:12px 0}.vote-row strong{font-size:15px}.vote-blocks{display:grid;grid-template-columns:repeat(9,minmax(0,22px));gap:4px}.vote-blocks i{aspect-ratio:1;background:#258251;border-radius:3px}.vote-comparison figcaption{font-size:13px;color:#53625a;margin-top:16px}
+
+.dividend-figure{margin:20px 0}.dividend-blocks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;max-width:420px}.dividend-blocks span{background:#edf6ef;border:1px solid #c7ddce;border-radius:10px;color:#226a43;padding:18px 4px;text-align:center;font-weight:700}.dividend-figure figcaption{font-size:13px;color:#53625a;margin-top:12px}
+
+.shareholder-table{width:100%;border-collapse:collapse;margin:20px 0;text-align:left}.shareholder-table caption{text-align:left;font-size:13px;color:#53625a;padding-bottom:8px}.shareholder-table th,.shareholder-table td{padding:12px 16px;border-bottom:1px solid #e1e8e3}.shareholder-table thead{background:#edf6ef}.shareholder-table tbody th{font-weight:500}
+
+.day-one .question-note{font-size:13px;line-height:1.6;color:#6b746c;margin:-20px 0 28px;}
